@@ -20,10 +20,10 @@ import com.thomas.hrworker.repositories.WorkerRepository;
 public class WorkerResource {
 
 	private static Logger logger = LoggerFactory.getLogger(WorkerResource.class);
-	
+
 	@Autowired
 	private Environment env;
-	
+
 	@Autowired
 	private WorkerRepository repository;
 
@@ -35,9 +35,17 @@ public class WorkerResource {
 
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Worker> findById(@PathVariable Long id) {
-		
+
+		/*
+		try {
+			Thread.sleep(3000L);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		*/
+
 		logger.info("PORT = " + env.getProperty("local.server.port"));
-		
+
 		Worker obj = repository.findById(id).get();
 		return ResponseEntity.ok(obj);
 	}
