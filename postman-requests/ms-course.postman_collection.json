@@ -206,6 +206,27 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Show worker configs on console",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/hr-worker/workers/configs",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"hr-worker",
+										"workers",
+										"configs"
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				},
