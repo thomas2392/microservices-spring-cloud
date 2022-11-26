@@ -208,7 +208,28 @@
 							"response": []
 						},
 						{
-							"name": "Show worker configs on console",
+							"name": "Actuator refresh",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/hr-worker/actuator/refresh",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"hr-worker",
+										"actuator",
+										"refresh"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show worker configs on console Copy",
 							"request": {
 								"method": "GET",
 								"header": [],
