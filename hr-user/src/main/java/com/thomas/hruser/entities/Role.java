@@ -1,4 +1,4 @@
-package com.thomas.hruser.entitiies;
+package com.thomas.hruser.entities;
 
 import java.io.Serializable;
 import java.util.Objects;
