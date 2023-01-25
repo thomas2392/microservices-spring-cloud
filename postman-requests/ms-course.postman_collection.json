@@ -542,6 +542,38 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "hr-oauth",
+					"item": [
+						{
+							"name": "User by email",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/hr-oauth/users/search?email=leia@gmail.com",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"hr-oauth",
+										"users",
+										"search"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "leia@gmail.com"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		}
